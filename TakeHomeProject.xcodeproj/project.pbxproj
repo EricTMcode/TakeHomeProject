@@ -11,6 +11,7 @@
 		075568D62A7E551100617D64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075568D52A7E551100617D64 /* ContentView.swift */; };
 		075568D82A7E551200617D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075568D72A7E551200617D64 /* Assets.xcassets */; };
 		075568DB2A7E551200617D64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075568DA2A7E551200617D64 /* Preview Assets.xcassets */; };
+		075568E32A7E558900617D64 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075568E22A7E558900617D64 /* Symbols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		075568D52A7E551100617D64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		075568D72A7E551200617D64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		075568DA2A7E551200617D64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		075568E22A7E558900617D64 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		075568D22A7E551100617D64 /* TakeHomeProject */ = {
 			isa = PBXGroup;
 			children = (
+				075568E12A7E552500617D64 /* Ressources */,
 				075568D32A7E551100617D64 /* TakeHomeProjectApp.swift */,
 				075568D52A7E551100617D64 /* ContentView.swift */,
 				075568D72A7E551200617D64 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				075568DA2A7E551200617D64 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		075568E12A7E552500617D64 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				075568E22A7E558900617D64 /* Symbols.swift */,
+			);
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075568E32A7E558900617D64 /* Symbols.swift in Sources */,
 				075568D62A7E551100617D64 /* ContentView.swift in Sources */,
 				075568D42A7E551100617D64 /* TakeHomeProjectApp.swift in Sources */,
 			);
