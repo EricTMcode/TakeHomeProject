@@ -13,6 +13,8 @@
 		075568DB2A7E551200617D64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075568DA2A7E551200617D64 /* Preview Assets.xcassets */; };
 		075568E32A7E558900617D64 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075568E22A7E558900617D64 /* Symbols.swift */; };
 		075568E52A7E576000617D64 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075568E42A7E576000617D64 /* Theme.swift */; };
+		075568F82A7FA39800617D64 /* UsersStaticData.json in Resources */ = {isa = PBXBuildFile; fileRef = 075568F72A7FA39800617D64 /* UsersStaticData.json */; };
+		075568FC2A7FA41700617D64 /* SingleUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = 075568FB2A7FA41700617D64 /* SingleUserData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		075568E22A7E558900617D64 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		075568E42A7E576000617D64 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		075568F52A7E5AF400617D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		075568F72A7FA39800617D64 /* UsersStaticData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UsersStaticData.json; sourceTree = "<group>"; };
+		075568FB2A7FA41700617D64 /* SingleUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleUserData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		075568E12A7E552500617D64 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				075568F62A7FA35700617D64 /* JSON */,
 				075568E22A7E558900617D64 /* Symbols.swift */,
 				075568E42A7E576000617D64 /* Theme.swift */,
 			);
@@ -203,6 +208,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		075568F62A7FA35700617D64 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				075568F72A7FA39800617D64 /* UsersStaticData.json */,
+				075568FB2A7FA41700617D64 /* SingleUserData.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,6 +277,8 @@
 			files = (
 				075568DB2A7E551200617D64 /* Preview Assets.xcassets in Resources */,
 				075568D82A7E551200617D64 /* Assets.xcassets in Resources */,
+				075568FC2A7FA41700617D64 /* SingleUserData.json in Resources */,
+				075568F82A7FA39800617D64 /* UsersStaticData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
