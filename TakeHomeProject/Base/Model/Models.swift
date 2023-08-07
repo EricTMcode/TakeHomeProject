@@ -11,6 +11,8 @@ struct User: Codable {
     let id: Int
     let email, firstName, lastName: String
     let avatar: String
+    
+    static var example = User(id: 109, email: "eric@gmail.com", firstName: "Eric", lastName: "Barto", avatar: "https://reqres.in/img/faces/2-image.jpg")
 }
 
 // MARK: - Support
