@@ -20,6 +20,8 @@
 		075569032A7FA60900617D64 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569022A7FA60900617D64 /* Models.swift */; };
 		075569082A7FA6AE00617D64 /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569072A7FA6AE00617D64 /* StaticJSONMapper.swift */; };
 		0755690A2A7FABE200617D64 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569092A7FABE200617D64 /* PeopleView.swift */; };
+		0755690C2A8108DB00617D64 /* PersonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755690B2A8108DB00617D64 /* PersonItemView.swift */; };
+		0755690F2A810A3900617D64 /* PillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755690E2A810A3900617D64 /* PillView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		075569022A7FA60900617D64 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		075569072A7FA6AE00617D64 /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
 		075569092A7FABE200617D64 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+		0755690B2A8108DB00617D64 /* PersonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItemView.swift; sourceTree = "<group>"; };
+		0755690E2A810A3900617D64 /* PillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		075568E62A7E596200617D64 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				0755690D2A810A2700617D64 /* Views */,
 				075569042A7FA63A00617D64 /* Mapper */,
 				075569012A7FA60100617D64 /* Model */,
 			);
@@ -161,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				075569092A7FABE200617D64 /* PeopleView.swift */,
+				0755690B2A8108DB00617D64 /* PersonItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,6 +254,14 @@
 			path = Mapper;
 			sourceTree = "<group>";
 		};
+		0755690D2A810A2700617D64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0755690E2A810A3900617D64 /* PillView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -326,8 +340,10 @@
 				075568E52A7E576000617D64 /* Theme.swift in Sources */,
 				075568D62A7E551100617D64 /* ContentView.swift in Sources */,
 				075568FE2A7FA4FE00617D64 /* UserDetailResponse.swift in Sources */,
+				0755690F2A810A3900617D64 /* PillView.swift in Sources */,
 				075568D42A7E551100617D64 /* TakeHomeProjectApp.swift in Sources */,
 				075569002A7FA54500617D64 /* UsersResponse.swift in Sources */,
+				0755690C2A8108DB00617D64 /* PersonItemView.swift in Sources */,
 				075569032A7FA60900617D64 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
