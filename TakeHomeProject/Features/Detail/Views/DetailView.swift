@@ -14,15 +14,17 @@ struct DetailView: View {
             
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
-                    VStack(alignment: .leading, spacing: 8) {
-                        PillView(id: 0)
-                        firstname
-                        lastname
-                        email
+                    Group {
+                        general
+                        link
                     }
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 18)
+                    .background(Theme.detailBackground, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    
                 }
+                .padding()
             }
-            .padding()
         }
     }
 }
@@ -39,9 +41,38 @@ private extension DetailView {
         Theme.background
             .ignoresSafeArea(edges: .top)
     }
+    
+    var link: some View {
+        Link(destination: .init(string: "https://requres.in#support-heading")!) {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Support Reqres")
+                    .foregroundColor(Theme.text)
+                    .font(.system(.body, design: .rounded)
+                        .weight(.semibold))
+                
+                Text("https://requres.in#support-heading")
+            }
+            Spacer()
+            
+            Symbols.link
+                .font(.system(.title3, design: .rounded))
+        }
+    }
 }
 
 private extension DetailView {
+    
+    var general: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            PillView(id: 0)
+            Group {
+                firstname
+                lastname
+                email
+            }
+            .foregroundColor(Theme.text)
+        }
+    }
     
     @ViewBuilder
     var firstname: some View {
