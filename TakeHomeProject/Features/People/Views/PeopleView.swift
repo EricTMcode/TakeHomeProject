@@ -10,6 +10,7 @@ import SwiftUI
 struct PeopleView: View {
     private let columns = Array(repeating: GridItem(.flexible()), count: 2)
     @State private var users: [User] = []
+    @State private var shouldShowCreate = false
     
     var body: some View {
         NavigationStack {
@@ -43,6 +44,9 @@ struct PeopleView: View {
                     print(error)
                 }
             }
+            .sheet(isPresented: $shouldShowCreate) {
+                CreateView()
+            }
         }
     }
 }
@@ -63,7 +67,7 @@ private extension PeopleView {
     
     var create: some View {
         Button {
-            
+            shouldShowCreate.toggle()
         } label: {
             Symbols.plus
                 .font(.system(.headline, design: .rounded))

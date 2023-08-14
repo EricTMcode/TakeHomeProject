@@ -8,16 +8,27 @@
 import SwiftUI
 
 struct CreateView: View {
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
-        Form {
-            firstname
-            lastname
-            job
-            
-            Section {
-                submit
+        NavigationStack {
+            Form {
+                firstname
+                lastname
+                job
+                
+                Section {
+                    submit
+                }
+            }
+            .navigationTitle("Create")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    done
+                }
             }
         }
+        
     }
 }
 
@@ -28,6 +39,13 @@ struct CreateView_Previews: PreviewProvider {
 }
 
 private extension CreateView {
+    
+    var done: some View {
+        Button("Done") {
+            dismiss()
+        }
+    }
+    
     var firstname: some View {
         TextField("First name", text: .constant(""))
     }
