@@ -23,6 +23,7 @@
 		0755690C2A8108DB00617D64 /* PersonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755690B2A8108DB00617D64 /* PersonItemView.swift */; };
 		0755690F2A810A3900617D64 /* PillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755690E2A810A3900617D64 /* PillView.swift */; };
 		075569112A8A5E4400617D64 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569102A8A5E4400617D64 /* DetailView.swift */; };
+		075569132A8A6A5600617D64 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569122A8A6A5600617D64 /* CreateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		0755690B2A8108DB00617D64 /* PersonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItemView.swift; sourceTree = "<group>"; };
 		0755690E2A810A3900617D64 /* PillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillView.swift; sourceTree = "<group>"; };
 		075569102A8A5E4400617D64 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		075569122A8A6A5600617D64 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 		075568EF2A7E59D900617D64 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				075569122A8A6A5600617D64 /* CreateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				075568D62A7E551100617D64 /* ContentView.swift in Sources */,
 				075568FE2A7FA4FE00617D64 /* UserDetailResponse.swift in Sources */,
 				0755690F2A810A3900617D64 /* PillView.swift in Sources */,
+				075569132A8A6A5600617D64 /* CreateView.swift in Sources */,
 				075568D42A7E551100617D64 /* TakeHomeProjectApp.swift in Sources */,
 				075569002A7FA54500617D64 /* UsersResponse.swift in Sources */,
 				0755690C2A8108DB00617D64 /* PersonItemView.swift in Sources */,
