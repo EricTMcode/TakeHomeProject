@@ -37,11 +37,13 @@ struct PeopleView: View {
                 }
             }
             .onAppear {
-                do {
-                    let res = try StaticJSONMapper.decode(file: "UsersStaticData", type: UsersResponse.self)
-                    users = res.data
-                } catch {
-                    print(error)
+                NetworkingManager.shared.request("https://reqres.in/api/users", type: UsersResponse.self) { res in
+                    switch res {
+                    case .success(let response):
+                        users = response.data
+                    case .failure(let error):
+                        print(error)
+                    }
                 }
             }
             .sheet(isPresented: $shouldShowCreate) {
