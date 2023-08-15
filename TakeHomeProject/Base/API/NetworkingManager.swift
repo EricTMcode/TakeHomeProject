@@ -45,6 +45,7 @@ final class NetworkingManager {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let res = try decoder.decode(T.self, from: data)
+                completion(.success(res))
                 
             } catch {
                 completion(.failure(NetworkingError.failedToDecode(error: error)))
