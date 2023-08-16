@@ -92,6 +92,23 @@ extension NetworkingManager {
     }
 }
 
+extension NetworkingManager.NetworkingError {
+    var errorDescription: String? {
+        switch self {
+        case .invalidUrl:
+            return "URL isn't valid"
+        case .custom(let err):
+            return "Something went wrong \(err.localizedDescription)"
+        case .invalidStatusCode:
+            return "Status code falls into the wrong range"
+        case .invalidData:
+            return "Response data is invalid"
+        case .failedToDecode:
+            return "Failed to decode"
+        }
+    }
+}
+
 extension NetworkingManager {
     enum MethodType {
         case GET
