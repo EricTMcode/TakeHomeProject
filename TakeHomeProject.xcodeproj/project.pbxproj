@@ -29,6 +29,7 @@
 		0755691C2A8BB70400617D64 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755691B2A8BB70400617D64 /* DetailViewModel.swift */; };
 		0755691E2A8CF23700617D64 /* NewPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755691D2A8CF23700617D64 /* NewPerson.swift */; };
 		075569202A8CF2C800617D64 /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755691F2A8CF2C800617D64 /* CreateViewModel.swift */; };
+		075569222A8D032B00617D64 /* CheckmarkPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569212A8D032B00617D64 /* CheckmarkPopoverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		0755691B2A8BB70400617D64 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		0755691D2A8CF23700617D64 /* NewPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPerson.swift; sourceTree = "<group>"; };
 		0755691F2A8CF2C800617D64 /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
+		075569212A8D032B00617D64 /* CheckmarkPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkPopoverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				0755690E2A810A3900617D64 /* PillView.swift */,
+				075569212A8D032B00617D64 /* CheckmarkPopoverView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				075569032A7FA60900617D64 /* Models.swift in Sources */,
 				075569182A8BB1A600617D64 /* PeopleViewModel.swift in Sources */,
 				075569162A8BA91C00617D64 /* NetworkingManager.swift in Sources */,
+				075569222A8D032B00617D64 /* CheckmarkPopoverView.swift in Sources */,
 				0755691C2A8BB70400617D64 /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
