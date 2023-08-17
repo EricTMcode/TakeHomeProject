@@ -34,6 +34,7 @@
 		075569282A8E412A00617D64 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569272A8E412A00617D64 /* HapticsManager.swift */; };
 		0755692B2A8E42E800617D64 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755692A2A8E42E800617D64 /* SettingsView.swift */; };
 		0755692E2A8E446400617D64 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755692D2A8E446400617D64 /* UserDefaultKeys.swift */; };
+		075569302A8E478300617D64 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755692F2A8E478300617D64 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		075569272A8E412A00617D64 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		0755692A2A8E42E800617D64 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0755692D2A8E446400617D64 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
+		0755692F2A8E478300617D64 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = ../../../../../../../.Trash/TakeHomeProject/TakeHomeProject/Base/API/Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				075569152A8BA91C00617D64 /* NetworkingManager.swift */,
+				0755692F2A8E478300617D64 /* Endpoint.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				075569202A8CF2C800617D64 /* CreateViewModel.swift in Sources */,
 				075568D62A7E551100617D64 /* ContentView.swift in Sources */,
 				075569282A8E412A00617D64 /* HapticsManager.swift in Sources */,
+				075569302A8E478300617D64 /* Endpoint.swift in Sources */,
 				075568FE2A7FA4FE00617D64 /* UserDetailResponse.swift in Sources */,
 				0755690F2A810A3900617D64 /* PillView.swift in Sources */,
 				0755692E2A8E446400617D64 /* UserDefaultKeys.swift in Sources */,
