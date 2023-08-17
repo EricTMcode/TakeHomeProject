@@ -30,6 +30,7 @@
 		0755691E2A8CF23700617D64 /* NewPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755691D2A8CF23700617D64 /* NewPerson.swift */; };
 		075569202A8CF2C800617D64 /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755691F2A8CF2C800617D64 /* CreateViewModel.swift */; };
 		075569222A8D032B00617D64 /* CheckmarkPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569212A8D032B00617D64 /* CheckmarkPopoverView.swift */; };
+		075569252A8E3A8300617D64 /* CreateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569242A8E3A8300617D64 /* CreateValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		0755691D2A8CF23700617D64 /* NewPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPerson.swift; sourceTree = "<group>"; };
 		0755691F2A8CF2C800617D64 /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
 		075569212A8D032B00617D64 /* CheckmarkPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkPopoverView.swift; sourceTree = "<group>"; };
+		075569242A8E3A8300617D64 /* CreateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		075568E92A7E597800617D64 /* Create */ = {
 			isa = PBXGroup;
 			children = (
+				075569232A8E3A7B00617D64 /* Validator */,
 				075568F12A7E59E100617D64 /* ViewModels */,
 				075568F02A7E59DE00617D64 /* Model */,
 				075568EF2A7E59D900617D64 /* Views */,
@@ -294,6 +297,14 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		075569232A8E3A7B00617D64 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				075569242A8E3A8300617D64 /* CreateValidator.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,6 +379,7 @@
 			files = (
 				075569082A7FA6AE00617D64 /* StaticJSONMapper.swift in Sources */,
 				075569112A8A5E4400617D64 /* DetailView.swift in Sources */,
+				075569252A8E3A8300617D64 /* CreateValidator.swift in Sources */,
 				075568E32A7E558900617D64 /* Symbols.swift in Sources */,
 				0755690A2A7FABE200617D64 /* PeopleView.swift in Sources */,
 				075568E52A7E576000617D64 /* Theme.swift in Sources */,
