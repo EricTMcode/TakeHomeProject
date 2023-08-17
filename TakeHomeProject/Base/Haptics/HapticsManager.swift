@@ -21,5 +21,7 @@ fileprivate final class HapticsManager {
 }
 
 func haptic(_ notification: UINotificationFeedbackGenerator.FeedbackType) {
-    HapticsManager.shared.trigger(notification)
+    if UserDefaults.standard.bool(forKey: UserDefaultKeys.hapticsEnabled) {
+        HapticsManager.shared.trigger(notification)
+    }
 }

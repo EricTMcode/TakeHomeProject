@@ -32,6 +32,8 @@
 		075569222A8D032B00617D64 /* CheckmarkPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569212A8D032B00617D64 /* CheckmarkPopoverView.swift */; };
 		075569252A8E3A8300617D64 /* CreateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569242A8E3A8300617D64 /* CreateValidator.swift */; };
 		075569282A8E412A00617D64 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569272A8E412A00617D64 /* HapticsManager.swift */; };
+		0755692B2A8E42E800617D64 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755692A2A8E42E800617D64 /* SettingsView.swift */; };
+		0755692E2A8E446400617D64 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755692D2A8E446400617D64 /* UserDefaultKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		075569212A8D032B00617D64 /* CheckmarkPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkPopoverView.swift; sourceTree = "<group>"; };
 		075569242A8E3A8300617D64 /* CreateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidator.swift; sourceTree = "<group>"; };
 		075569272A8E412A00617D64 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		0755692A2A8E42E800617D64 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0755692D2A8E446400617D64 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		075568E62A7E596200617D64 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				0755692C2A8E444A00617D64 /* UserDefaults */,
 				075569262A8E412000617D64 /* Haptics */,
 				075569142A8BA90800617D64 /* API */,
 				0755690D2A810A2700617D64 /* Views */,
@@ -181,6 +186,7 @@
 		075568EB2A7E598200617D64 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				075569292A8E42DF00617D64 /* Views */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -316,6 +322,22 @@
 			path = Haptics;
 			sourceTree = "<group>";
 		};
+		075569292A8E42DF00617D64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0755692A2A8E42E800617D64 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0755692C2A8E444A00617D64 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				0755692D2A8E446400617D64 /* UserDefaultKeys.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -400,6 +422,7 @@
 				075569282A8E412A00617D64 /* HapticsManager.swift in Sources */,
 				075568FE2A7FA4FE00617D64 /* UserDetailResponse.swift in Sources */,
 				0755690F2A810A3900617D64 /* PillView.swift in Sources */,
+				0755692E2A8E446400617D64 /* UserDefaultKeys.swift in Sources */,
 				075569132A8A6A5600617D64 /* CreateView.swift in Sources */,
 				075568D42A7E551100617D64 /* TakeHomeProjectApp.swift in Sources */,
 				075569002A7FA54500617D64 /* UsersResponse.swift in Sources */,
@@ -409,6 +432,7 @@
 				075569162A8BA91C00617D64 /* NetworkingManager.swift in Sources */,
 				075569222A8D032B00617D64 /* CheckmarkPopoverView.swift in Sources */,
 				0755691C2A8BB70400617D64 /* DetailViewModel.swift in Sources */,
+				0755692B2A8E42E800617D64 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
