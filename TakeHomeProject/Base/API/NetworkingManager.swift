@@ -34,8 +34,6 @@ final class NetworkingManager {
         let res = try decoder.decode(T.self, from: data)
         
         return res
-        
-        
     }
     
     func request(_ endpoint: Endpoint) async throws {
@@ -82,8 +80,6 @@ extension NetworkingManager.NetworkingError {
         }
     }
 }
-
-
 
 private extension NetworkingManager {
     func buildRequest(from url: URL, methodType: Endpoint.MethodType) -> URLRequest {
