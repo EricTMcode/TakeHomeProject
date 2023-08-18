@@ -19,6 +19,8 @@ final class NetworkingManager {
             throw NetworkingError.invalidUrl
         }
         
+        print(url)
+        
         let request = buildRequest(from: url, methodType: endpoint.methodType)
         
         let (data, response) = try await URLSession.shared.data(for: request)
