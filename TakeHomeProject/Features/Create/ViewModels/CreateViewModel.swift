@@ -16,6 +16,7 @@ final class CreateViewModel: ObservableObject {
     
     private let validator = CreateValidator()
     
+    @MainActor
     func create() async {
         do {
             try validator.validate(person)
