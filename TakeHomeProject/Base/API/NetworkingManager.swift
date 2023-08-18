@@ -38,30 +38,21 @@ final class NetworkingManager {
         
     }
     
-    func request(_ endpoint: Endpoint , completion: @escaping (Result<Void, Error>) -> Void) {
+    func request(_ endpoint: Endpoint) async throws {
+        
         guard let url = endpoint.url else {
-            completion(.failure(NetworkingError.invalidUrl))
-            return
+            throw NetworkingError.invalidUrl
         }
         
         let request = buildRequest(from: url, methodType: endpoint.methodType)
         
-        let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
-            
-            if error != nil {
-                completion(.failure(NetworkingError.custom(error: error!)))
-                return
-            }
-            
-            guard let response = response as? HTTPURLResponse,
-                  (200...300) ~= response.statusCode else {
-                let statusCode = (response as! HTTPURLResponse).statusCode
-                completion(.failure(NetworkingError.invalidStatusCode(statusCode: statusCode)))
-                return
-            }
-            completion(.success(()))
+        let (_, response) = try await URLSession.shared.data(for: request)
+        
+        guard let response = response as? HTTPURLResponse,
+              (200...300) ~= response.statusCode else {
+            let statusCode = (response as! HTTPURLResponse).statusCode
+            throw NetworkingError.invalidStatusCode(statusCode: statusCode)
         }
-        dataTask.resume()
     }
 }
 
