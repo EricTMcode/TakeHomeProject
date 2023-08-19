@@ -5,7 +5,6 @@
 //  Created by Eric on 19/08/2023.
 //
 
-import Foundation
 import XCTest
 @testable import TakeHomeProject
 

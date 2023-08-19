@@ -36,6 +36,7 @@
 		0755692E2A8E446400617D64 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755692D2A8E446400617D64 /* UserDefaultKeys.swift */; };
 		075569342A8F94E600617D64 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569332A8F94E600617D64 /* Endpoint.swift */; };
 		075569442A90F2C600617D64 /* JSONMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569432A90F2C600617D64 /* JSONMapperTests.swift */; };
+		075569472A91003B00617D64 /* CreteFormValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569462A91003B00617D64 /* CreteFormValidatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		075569332A8F94E600617D64 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		075569392A90F29600617D64 /* TakeHomeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		075569432A90F2C600617D64 /* JSONMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapperTests.swift; sourceTree = "<group>"; };
+		075569462A91003B00617D64 /* CreteFormValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreteFormValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +368,7 @@
 		0755693A2A90F29600617D64 /* TakeHomeProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				075569452A90FFF700617D64 /* Form */,
 				075569422A90F2B400617D64 /* Mapper */,
 			);
 			path = TakeHomeProjectTests;
@@ -377,6 +380,14 @@
 				075569432A90F2C600617D64 /* JSONMapperTests.swift */,
 			);
 			path = Mapper;
+			sourceTree = "<group>";
+		};
+		075569452A90FFF700617D64 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				075569462A91003B00617D64 /* CreteFormValidatorTests.swift */,
+			);
+			path = Form;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075569472A91003B00617D64 /* CreteFormValidatorTests.swift in Sources */,
 				075569442A90F2C600617D64 /* JSONMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
