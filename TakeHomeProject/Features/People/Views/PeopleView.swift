@@ -30,10 +30,20 @@ struct PeopleView: View {
                                     DetailView(userId: user.id)
                                 } label: {
                                     PersonItemView(user: user)
+                                        .task {
+                                            if vm.hasReachEnd(of: user) && !vm.isFetching {
+                                                await vm.fetchNextSetOfUsers()
+                                            }
+                                        }
                                 }
                             }
                         }
                         .padding()
+                    }
+                    .overlay(alignment: .bottom) {
+                        if vm.isFetching {
+                            ProgressView()
+                        }
                     }
                 }
             }
