@@ -35,7 +35,18 @@
 		0755692B2A8E42E800617D64 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755692A2A8E42E800617D64 /* SettingsView.swift */; };
 		0755692E2A8E446400617D64 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755692D2A8E446400617D64 /* UserDefaultKeys.swift */; };
 		075569342A8F94E600617D64 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569332A8F94E600617D64 /* Endpoint.swift */; };
+		075569442A90F2C600617D64 /* JSONMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569432A90F2C600617D64 /* JSONMapperTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0755693D2A90F29600617D64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 075568C82A7E551100617D64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 075568CF2A7E551100617D64;
+			remoteInfo = TakeHomeProject;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		075568D02A7E551100617D64 /* TakeHomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,10 +79,19 @@
 		0755692A2A8E42E800617D64 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0755692D2A8E446400617D64 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 		075569332A8F94E600617D64 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		075569392A90F29600617D64 /* TakeHomeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		075569432A90F2C600617D64 /* JSONMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		075568CD2A7E551100617D64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		075569362A90F29600617D64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				075568D22A7E551100617D64 /* TakeHomeProject */,
+				0755693A2A90F29600617D64 /* TakeHomeProjectTests */,
 				075568D12A7E551100617D64 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				075568D02A7E551100617D64 /* TakeHomeProject.app */,
+				075569392A90F29600617D64 /* TakeHomeProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -341,6 +363,22 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		0755693A2A90F29600617D64 /* TakeHomeProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				075569422A90F2B400617D64 /* Mapper */,
+			);
+			path = TakeHomeProjectTests;
+			sourceTree = "<group>";
+		};
+		075569422A90F2B400617D64 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				075569432A90F2C600617D64 /* JSONMapperTests.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -361,6 +399,24 @@
 			productReference = 075568D02A7E551100617D64 /* TakeHomeProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		075569382A90F29600617D64 /* TakeHomeProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0755693F2A90F29600617D64 /* Build configuration list for PBXNativeTarget "TakeHomeProjectTests" */;
+			buildPhases = (
+				075569352A90F29600617D64 /* Sources */,
+				075569362A90F29600617D64 /* Frameworks */,
+				075569372A90F29600617D64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0755693E2A90F29600617D64 /* PBXTargetDependency */,
+			);
+			name = TakeHomeProjectTests;
+			productName = TakeHomeProjectTests;
+			productReference = 075569392A90F29600617D64 /* TakeHomeProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -373,6 +429,10 @@
 				TargetAttributes = {
 					075568CF2A7E551100617D64 = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					075569382A90F29600617D64 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 075568CF2A7E551100617D64;
 					};
 				};
 			};
@@ -390,6 +450,7 @@
 			projectRoot = "";
 			targets = (
 				075568CF2A7E551100617D64 /* TakeHomeProject */,
+				075569382A90F29600617D64 /* TakeHomeProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -403,6 +464,13 @@
 				075568D82A7E551200617D64 /* Assets.xcassets in Resources */,
 				075568FC2A7FA41700617D64 /* SingleUserData.json in Resources */,
 				075568F82A7FA39800617D64 /* UsersStaticData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		075569372A90F29600617D64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +508,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		075569352A90F29600617D64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075569442A90F2C600617D64 /* JSONMapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0755693E2A90F29600617D64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 075568CF2A7E551100617D64 /* TakeHomeProject */;
+			targetProxy = 0755693D2A90F29600617D64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		075568DC2A7E551200617D64 /* Debug */ = {
@@ -615,6 +699,42 @@
 			};
 			name = Release;
 		};
+		075569402A90F29600617D64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H7MDDDPC4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric.TakeHomeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeHomeProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TakeHomeProject";
+			};
+			name = Debug;
+		};
+		075569412A90F29600617D64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H7MDDDPC4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric.TakeHomeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeHomeProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TakeHomeProject";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -632,6 +752,15 @@
 			buildConfigurations = (
 				075568DF2A7E551200617D64 /* Debug */,
 				075568E02A7E551200617D64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0755693F2A90F29600617D64 /* Build configuration list for PBXNativeTarget "TakeHomeProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075569402A90F29600617D64 /* Debug */,
+				075569412A90F29600617D64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
