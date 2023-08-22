@@ -38,6 +38,8 @@
 		075569442A90F2C600617D64 /* JSONMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569432A90F2C600617D64 /* JSONMapperTests.swift */; };
 		075569472A91003B00617D64 /* CreteFormValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569462A91003B00617D64 /* CreteFormValidatorTests.swift */; };
 		0755694B2A9391CB00617D64 /* NetworkingEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755694A2A9391CB00617D64 /* NetworkingEndpointTests.swift */; };
+		0755694E2A939E1400617D64 /* MockURLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755694D2A939E1400617D64 /* MockURLSessionProtocol.swift */; };
+		075569512A93A18B00617D64 /* NetworkingManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569502A93A18B00617D64 /* NetworkingManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		075569432A90F2C600617D64 /* JSONMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapperTests.swift; sourceTree = "<group>"; };
 		075569462A91003B00617D64 /* CreteFormValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreteFormValidatorTests.swift; sourceTree = "<group>"; };
 		0755694A2A9391CB00617D64 /* NetworkingEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingEndpointTests.swift; sourceTree = "<group>"; };
+		0755694D2A939E1400617D64 /* MockURLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionProtocol.swift; sourceTree = "<group>"; };
+		075569502A93A18B00617D64 /* NetworkingManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				075568D22A7E551100617D64 /* TakeHomeProject */,
+				075568D72A7E551200617D64 /* Assets.xcassets */,
 				0755693A2A90F29600617D64 /* TakeHomeProjectTests */,
 				075568D12A7E551100617D64 /* Products */,
 			);
@@ -132,7 +137,6 @@
 				075568E12A7E552500617D64 /* Ressources */,
 				075568D32A7E551100617D64 /* TakeHomeProjectApp.swift */,
 				075568D52A7E551100617D64 /* ContentView.swift */,
-				075568D72A7E551200617D64 /* Assets.xcassets */,
 				075568D92A7E551200617D64 /* Preview Content */,
 			);
 			path = TakeHomeProject;
@@ -396,6 +400,8 @@
 		075569482A9391A700617D64 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				0755694F2A93A17000617D64 /* NetworkingManager */,
+				0755694C2A939DD800617D64 /* Mocks */,
 				075569492A9391B000617D64 /* Endpoint */,
 			);
 			path = Networking;
@@ -407,6 +413,22 @@
 				0755694A2A9391CB00617D64 /* NetworkingEndpointTests.swift */,
 			);
 			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		0755694C2A939DD800617D64 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0755694D2A939E1400617D64 /* MockURLSessionProtocol.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0755694F2A93A17000617D64 /* NetworkingManager */ = {
+			isa = PBXGroup;
+			children = (
+				075569502A93A18B00617D64 /* NetworkingManagerTests.swift */,
+			);
+			path = NetworkingManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -542,8 +564,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075569512A93A18B00617D64 /* NetworkingManagerTests.swift in Sources */,
 				075569472A91003B00617D64 /* CreteFormValidatorTests.swift in Sources */,
 				075569442A90F2C600617D64 /* JSONMapperTests.swift in Sources */,
+				0755694E2A939E1400617D64 /* MockURLSessionProtocol.swift in Sources */,
 				0755694B2A9391CB00617D64 /* NetworkingEndpointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
