@@ -113,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				075568D22A7E551100617D64 /* TakeHomeProject */,
+				075568D72A7E551200617D64 /* Assets.xcassets */,
 				0755693A2A90F29600617D64 /* TakeHomeProjectTests */,
 				075568D12A7E551100617D64 /* Products */,
 			);
@@ -136,7 +137,6 @@
 				075568E12A7E552500617D64 /* Ressources */,
 				075568D32A7E551100617D64 /* TakeHomeProjectApp.swift */,
 				075568D52A7E551100617D64 /* ContentView.swift */,
-				075568D72A7E551200617D64 /* Assets.xcassets */,
 				075568D92A7E551200617D64 /* Preview Content */,
 			);
 			path = TakeHomeProject;

@@ -66,6 +66,25 @@ extension NetworkingManager {
     }
 }
 
+extension NetworkingManager.NetworkingError: Equatable {
+    static func == (lhs: NetworkingManager.NetworkingError, rhs: NetworkingManager.NetworkingError) -> Bool {
+        switch(lhs, rhs) {
+        case (.invalidUrl, .invalidUrl):
+            return true
+        case (.custom(let lhsType), .custom(let rhsType)):
+            return lhsType.localizedDescription == rhsType.localizedDescription
+        case (.invalidStatusCode(let lhsType), .invalidStatusCode(let rhsType)):
+            return lhsType == rhsType
+        case (.invalidData, .invalidData):
+            return true
+        case (.failedToDecode(let lhsType), failedToDecode(let rhsType)):
+            return lhsType.localizedDescription == rhsType.localizedDescription
+        default:
+            return false
+        }
+    }
+}
+
 extension NetworkingManager.NetworkingError {
     var errorDescription: String? {
         switch self {
