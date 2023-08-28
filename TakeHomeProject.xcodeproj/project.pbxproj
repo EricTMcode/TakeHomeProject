@@ -38,27 +38,37 @@
 		075569442A90F2C600617D64 /* JSONMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569432A90F2C600617D64 /* JSONMapperTests.swift */; };
 		075569472A91003B00617D64 /* CreteFormValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569462A91003B00617D64 /* CreteFormValidatorTests.swift */; };
 		0755694B2A9391CB00617D64 /* NetworkingEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755694A2A9391CB00617D64 /* NetworkingEndpointTests.swift */; };
-		0755694E2A939E1400617D64 /* MockURLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755694D2A939E1400617D64 /* MockURLSessionProtocol.swift */; };
 		075569512A93A18B00617D64 /* NetworkingManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569502A93A18B00617D64 /* NetworkingManagerTests.swift */; };
 		075569542A94E51400617D64 /* PeopleViewModelSuccessTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569532A94E51400617D64 /* PeopleViewModelSuccessTest.swift */; };
-		075569562A94E60300617D64 /* NetworkingManagerUserResponseSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569552A94E60300617D64 /* NetworkingManagerUserResponseSuccessMock.swift */; };
 		0755695A2A98C7A200617D64 /* PeopleViewModelFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569592A98C7A200617D64 /* PeopleViewModelFailureTests.swift */; };
-		0755695C2A98C7CF00617D64 /* NetworkingManagerUserResponseFailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755695B2A98C7CF00617D64 /* NetworkingManagerUserResponseFailureMock.swift */; };
-		075569622A98CC4C00617D64 /* NetworkingManagerUserDetailsResponseSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569612A98CC4C00617D64 /* NetworkingManagerUserDetailsResponseSuccessMock.swift */; };
-		075569642A98CCF000617D64 /* NetworkingManagerUserDetailsResponseFailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569632A98CCF000617D64 /* NetworkingManagerUserDetailsResponseFailureMock.swift */; };
 		075569672A98CD5000617D64 /* DetailsViewModelSuccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569662A98CD5000617D64 /* DetailsViewModelSuccessTests.swift */; };
 		075569692A98CF5800617D64 /* DetailsViewModelFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569682A98CF5800617D64 /* DetailsViewModelFailureTests.swift */; };
-		0755696C2A98D8C700617D64 /* NetworkingManagerCreateSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755696B2A98D8C700617D64 /* NetworkingManagerCreateSuccessMock.swift */; };
-		075569712A98D96700617D64 /* CreateValidatorSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569702A98D96700617D64 /* CreateValidatorSuccessMock.swift */; };
 		075569732A98D9BB00617D64 /* CreateViewModelSuccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569722A98D9BB00617D64 /* CreateViewModelSuccessTests.swift */; };
-		075569752A98DB5700617D64 /* CreateValidatorFailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569742A98DB5600617D64 /* CreateValidatorFailureMock.swift */; };
 		075569772A98DBC700617D64 /* CreateViewModelValidationFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569762A98DBC700617D64 /* CreateViewModelValidationFailureTests.swift */; };
-		075569792A9A29F400617D64 /* NetworkingManagerCreateFailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569782A9A29F400617D64 /* NetworkingManagerCreateFailureMock.swift */; };
 		0755697B2A9A2A4600617D64 /* CreateViewModelFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755697A2A9A2A4600617D64 /* CreateViewModelFailureTests.swift */; };
+		0755698D2A9A2D2400617D64 /* PeopleScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755698C2A9A2D2400617D64 /* PeopleScreenUITests.swift */; };
+		075569902A9A2EB100617D64 /* UITestingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755698F2A9A2EB100617D64 /* UITestingHelper.swift */; };
+		075569942A9B79BE00617D64 /* NetworkingManagerCreateSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755696B2A98D8C700617D64 /* NetworkingManagerCreateSuccessMock.swift */; };
+		075569952A9B79EB00617D64 /* NetworkingManagerCreateFailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569782A9A29F400617D64 /* NetworkingManagerCreateFailureMock.swift */; };
+		075569962A9B7A1100617D64 /* CreateValidatorFailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569742A98DB5600617D64 /* CreateValidatorFailureMock.swift */; };
+		075569972A9B7A1D00617D64 /* CreateValidatorSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569702A98D96700617D64 /* CreateValidatorSuccessMock.swift */; };
+		075569982A9B7A2C00617D64 /* NetworkingManagerUserResponseFailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755695B2A98C7CF00617D64 /* NetworkingManagerUserResponseFailureMock.swift */; };
+		075569992A9B7A3A00617D64 /* NetworkingManagerUserResponseSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569552A94E60300617D64 /* NetworkingManagerUserResponseSuccessMock.swift */; };
+		0755699A2A9B7A4500617D64 /* NetworkingManagerUserDetailsResponseFailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569632A98CCF000617D64 /* NetworkingManagerUserDetailsResponseFailureMock.swift */; };
+		0755699B2A9B7A4F00617D64 /* NetworkingManagerUserDetailsResponseSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569612A98CC4C00617D64 /* NetworkingManagerUserDetailsResponseSuccessMock.swift */; };
+		0755699C2A9B7AA200617D64 /* MockURLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755694D2A939E1400617D64 /* MockURLSessionProtocol.swift */; };
+		07EBF4312A9CC64A003EE70F /* PeopleFailureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBF4302A9CC64A003EE70F /* PeopleFailureUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		0755693D2A90F29600617D64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 075568C82A7E551100617D64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 075568CF2A7E551100617D64;
+			remoteInfo = TakeHomeProject;
+		};
+		075569862A9A2C8F00617D64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 075568C82A7E551100617D64 /* Project object */;
 			proxyType = 1;
@@ -119,6 +129,10 @@
 		075569762A98DBC700617D64 /* CreateViewModelValidationFailureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModelValidationFailureTests.swift; sourceTree = "<group>"; };
 		075569782A9A29F400617D64 /* NetworkingManagerCreateFailureMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManagerCreateFailureMock.swift; sourceTree = "<group>"; };
 		0755697A2A9A2A4600617D64 /* CreateViewModelFailureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModelFailureTests.swift; sourceTree = "<group>"; };
+		075569802A9A2C8F00617D64 /* TakeHomeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0755698C2A9A2D2400617D64 /* PeopleScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleScreenUITests.swift; sourceTree = "<group>"; };
+		0755698F2A9A2EB100617D64 /* UITestingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingHelper.swift; sourceTree = "<group>"; };
+		07EBF4302A9CC64A003EE70F /* PeopleFailureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleFailureUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +150,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0755697D2A9A2C8F00617D64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -145,6 +166,7 @@
 				075568D22A7E551100617D64 /* TakeHomeProject */,
 				075568D72A7E551200617D64 /* Assets.xcassets */,
 				0755693A2A90F29600617D64 /* TakeHomeProjectTests */,
+				075569812A9A2C8F00617D64 /* TakeHomeProjectUITests */,
 				075568D12A7E551100617D64 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -154,6 +176,7 @@
 			children = (
 				075568D02A7E551100617D64 /* TakeHomeProject.app */,
 				075569392A90F29600617D64 /* TakeHomeProjectTests.xctest */,
+				075569802A9A2C8F00617D64 /* TakeHomeProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +184,8 @@
 		075568D22A7E551100617D64 /* TakeHomeProject */ = {
 			isa = PBXGroup;
 			children = (
+				075569912A9A327400617D64 /* Mocks */,
+				0755698E2A9A2EA300617D64 /* UITesting */,
 				075568F52A7E5AF400617D64 /* Info.plist */,
 				075568E72A7E596800617D64 /* Features */,
 				075568E62A7E596200617D64 /* Base */,
@@ -434,7 +459,6 @@
 			isa = PBXGroup;
 			children = (
 				0755694F2A93A17000617D64 /* NetworkingManager */,
-				0755694C2A939DD800617D64 /* Mocks */,
 				075569492A9391B000617D64 /* Endpoint */,
 			);
 			path = Networking;
@@ -446,17 +470,6 @@
 				0755694A2A9391CB00617D64 /* NetworkingEndpointTests.swift */,
 			);
 			path = Endpoint;
-			sourceTree = "<group>";
-		};
-		0755694C2A939DD800617D64 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				0755696A2A98D8B800617D64 /* Create */,
-				0755694D2A939E1400617D64 /* MockURLSessionProtocol.swift */,
-				0755695E2A98CBFC00617D64 /* UserDetails */,
-				0755695D2A98CBF200617D64 /* UserResponse */,
-			);
-			path = Mocks;
 			sourceTree = "<group>";
 		};
 		0755694F2A93A17000617D64 /* NetworkingManager */ = {
@@ -509,13 +522,13 @@
 				0755696B2A98D8C700617D64 /* NetworkingManagerCreateSuccessMock.swift */,
 				075569782A9A29F400617D64 /* NetworkingManagerCreateFailureMock.swift */,
 			);
-			path = Create;
+			name = Create;
+			path = ../../TakeHomeProjectTests/Networking/Mocks/Create;
 			sourceTree = "<group>";
 		};
 		0755696D2A98D92D00617D64 /* Create */ = {
 			isa = PBXGroup;
 			children = (
-				0755696E2A98D93700617D64 /* Mocks */,
 				075569722A98D9BB00617D64 /* CreateViewModelSuccessTests.swift */,
 				075569762A98DBC700617D64 /* CreateViewModelValidationFailureTests.swift */,
 				0755697A2A9A2A4600617D64 /* CreateViewModelFailureTests.swift */,
@@ -523,13 +536,50 @@
 			path = Create;
 			sourceTree = "<group>";
 		};
-		0755696E2A98D93700617D64 /* Mocks */ = {
+		075569812A9A2C8F00617D64 /* TakeHomeProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0755698B2A9A2D0600617D64 /* People */,
+			);
+			path = TakeHomeProjectUITests;
+			sourceTree = "<group>";
+		};
+		0755698B2A9A2D0600617D64 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				0755698C2A9A2D2400617D64 /* PeopleScreenUITests.swift */,
+				07EBF4302A9CC64A003EE70F /* PeopleFailureUITests.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		0755698E2A9A2EA300617D64 /* UITesting */ = {
+			isa = PBXGroup;
+			children = (
+				0755698F2A9A2EB100617D64 /* UITestingHelper.swift */,
+			);
+			path = UITesting;
+			sourceTree = "<group>";
+		};
+		075569912A9A327400617D64 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0755696A2A98D8B800617D64 /* Create */,
+				0755694D2A939E1400617D64 /* MockURLSessionProtocol.swift */,
+				0755695E2A98CBFC00617D64 /* UserDetails */,
+				0755695D2A98CBF200617D64 /* UserResponse */,
+				075569922A9A327700617D64 /* Create */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		075569922A9A327700617D64 /* Create */ = {
 			isa = PBXGroup;
 			children = (
 				075569702A98D96700617D64 /* CreateValidatorSuccessMock.swift */,
 				075569742A98DB5600617D64 /* CreateValidatorFailureMock.swift */,
 			);
-			path = Mocks;
+			path = Create;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -570,6 +620,24 @@
 			productReference = 075569392A90F29600617D64 /* TakeHomeProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		0755697F2A9A2C8F00617D64 /* TakeHomeProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 075569882A9A2C8F00617D64 /* Build configuration list for PBXNativeTarget "TakeHomeProjectUITests" */;
+			buildPhases = (
+				0755697C2A9A2C8F00617D64 /* Sources */,
+				0755697D2A9A2C8F00617D64 /* Frameworks */,
+				0755697E2A9A2C8F00617D64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				075569872A9A2C8F00617D64 /* PBXTargetDependency */,
+			);
+			name = TakeHomeProjectUITests;
+			productName = TakeHomeProjectUITests;
+			productReference = 075569802A9A2C8F00617D64 /* TakeHomeProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -585,6 +653,11 @@
 					};
 					075569382A90F29600617D64 = {
 						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 075568CF2A7E551100617D64;
+					};
+					0755697F2A9A2C8F00617D64 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 						TestTargetID = 075568CF2A7E551100617D64;
 					};
 				};
@@ -604,6 +677,7 @@
 			targets = (
 				075568CF2A7E551100617D64 /* TakeHomeProject */,
 				075569382A90F29600617D64 /* TakeHomeProjectTests */,
+				0755697F2A9A2C8F00617D64 /* TakeHomeProjectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -627,6 +701,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0755697E2A9A2C8F00617D64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -636,14 +717,19 @@
 			files = (
 				075569082A7FA6AE00617D64 /* StaticJSONMapper.swift in Sources */,
 				075569112A8A5E4400617D64 /* DetailView.swift in Sources */,
+				0755699C2A9B7AA200617D64 /* MockURLSessionProtocol.swift in Sources */,
 				075569252A8E3A8300617D64 /* CreateValidator.swift in Sources */,
 				075568E32A7E558900617D64 /* Symbols.swift in Sources */,
+				075569972A9B7A1D00617D64 /* CreateValidatorSuccessMock.swift in Sources */,
 				0755690A2A7FABE200617D64 /* PeopleView.swift in Sources */,
 				075568E52A7E576000617D64 /* Theme.swift in Sources */,
 				0755691E2A8CF23700617D64 /* NewPerson.swift in Sources */,
 				075569202A8CF2C800617D64 /* CreateViewModel.swift in Sources */,
 				075568D62A7E551100617D64 /* ContentView.swift in Sources */,
+				075569982A9B7A2C00617D64 /* NetworkingManagerUserResponseFailureMock.swift in Sources */,
+				075569992A9B7A3A00617D64 /* NetworkingManagerUserResponseSuccessMock.swift in Sources */,
 				075569282A8E412A00617D64 /* HapticsManager.swift in Sources */,
+				075569952A9B79EB00617D64 /* NetworkingManagerCreateFailureMock.swift in Sources */,
 				075569342A8F94E600617D64 /* Endpoint.swift in Sources */,
 				075568FE2A7FA4FE00617D64 /* UserDetailResponse.swift in Sources */,
 				0755690F2A810A3900617D64 /* PillView.swift in Sources */,
@@ -655,8 +741,13 @@
 				075569032A7FA60900617D64 /* Models.swift in Sources */,
 				075569182A8BB1A600617D64 /* PeopleViewModel.swift in Sources */,
 				075569162A8BA91C00617D64 /* NetworkingManager.swift in Sources */,
+				0755699A2A9B7A4500617D64 /* NetworkingManagerUserDetailsResponseFailureMock.swift in Sources */,
+				075569942A9B79BE00617D64 /* NetworkingManagerCreateSuccessMock.swift in Sources */,
 				075569222A8D032B00617D64 /* CheckmarkPopoverView.swift in Sources */,
+				0755699B2A9B7A4F00617D64 /* NetworkingManagerUserDetailsResponseSuccessMock.swift in Sources */,
 				0755691C2A8BB70400617D64 /* DetailViewModel.swift in Sources */,
+				075569902A9A2EB100617D64 /* UITestingHelper.swift in Sources */,
+				075569962A9B7A1100617D64 /* CreateValidatorFailureMock.swift in Sources */,
 				0755692B2A8E42E800617D64 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -667,24 +758,24 @@
 			files = (
 				0755695A2A98C7A200617D64 /* PeopleViewModelFailureTests.swift in Sources */,
 				075569542A94E51400617D64 /* PeopleViewModelSuccessTest.swift in Sources */,
-				075569792A9A29F400617D64 /* NetworkingManagerCreateFailureMock.swift in Sources */,
 				075569692A98CF5800617D64 /* DetailsViewModelFailureTests.swift in Sources */,
-				0755696C2A98D8C700617D64 /* NetworkingManagerCreateSuccessMock.swift in Sources */,
-				075569622A98CC4C00617D64 /* NetworkingManagerUserDetailsResponseSuccessMock.swift in Sources */,
-				075569752A98DB5700617D64 /* CreateValidatorFailureMock.swift in Sources */,
-				075569562A94E60300617D64 /* NetworkingManagerUserResponseSuccessMock.swift in Sources */,
 				075569512A93A18B00617D64 /* NetworkingManagerTests.swift in Sources */,
-				075569712A98D96700617D64 /* CreateValidatorSuccessMock.swift in Sources */,
 				075569732A98D9BB00617D64 /* CreateViewModelSuccessTests.swift in Sources */,
-				0755695C2A98C7CF00617D64 /* NetworkingManagerUserResponseFailureMock.swift in Sources */,
 				075569472A91003B00617D64 /* CreteFormValidatorTests.swift in Sources */,
 				075569672A98CD5000617D64 /* DetailsViewModelSuccessTests.swift in Sources */,
 				075569442A90F2C600617D64 /* JSONMapperTests.swift in Sources */,
-				075569642A98CCF000617D64 /* NetworkingManagerUserDetailsResponseFailureMock.swift in Sources */,
-				0755694E2A939E1400617D64 /* MockURLSessionProtocol.swift in Sources */,
 				0755697B2A9A2A4600617D64 /* CreateViewModelFailureTests.swift in Sources */,
 				075569772A98DBC700617D64 /* CreateViewModelValidationFailureTests.swift in Sources */,
 				0755694B2A9391CB00617D64 /* NetworkingEndpointTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0755697C2A9A2C8F00617D64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0755698D2A9A2D2400617D64 /* PeopleScreenUITests.swift in Sources */,
+				07EBF4312A9CC64A003EE70F /* PeopleFailureUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +786,11 @@
 			isa = PBXTargetDependency;
 			target = 075568CF2A7E551100617D64 /* TakeHomeProject */;
 			targetProxy = 0755693D2A90F29600617D64 /* PBXContainerItemProxy */;
+		};
+		075569872A9A2C8F00617D64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 075568CF2A7E551100617D64 /* TakeHomeProject */;
+			targetProxy = 075569862A9A2C8F00617D64 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -907,6 +1003,43 @@
 			};
 			name = Release;
 		};
+		075569892A9A2C8F00617D64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H7MDDDPC4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric.TakeHomeProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TakeHomeProject;
+			};
+			name = Debug;
+		};
+		0755698A2A9A2C8F00617D64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H7MDDDPC4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric.TakeHomeProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TakeHomeProject;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -933,6 +1066,15 @@
 			buildConfigurations = (
 				075569402A90F29600617D64 /* Debug */,
 				075569412A90F29600617D64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		075569882A9A2C8F00617D64 /* Build configuration list for PBXNativeTarget "TakeHomeProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075569892A9A2C8F00617D64 /* Debug */,
+				0755698A2A9A2C8F00617D64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

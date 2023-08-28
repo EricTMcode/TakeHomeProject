@@ -5,8 +5,8 @@
 //  Created by Eric on 25/08/2023.
 //
 
+#if DEBUG
 import Foundation
-@testable import TakeHomeProject
 
 class NetworkingManagerUserDetailsResponseSuccessMock: NetworkingManagerImpl {
     func request<T>(session: URLSession, _ endpoint: TakeHomeProject.Endpoint, type: T.Type) async throws -> T where T : Decodable, T : Encodable {
@@ -16,3 +16,4 @@ class NetworkingManagerUserDetailsResponseSuccessMock: NetworkingManagerImpl {
     func request(session: URLSession, _ endpoint: TakeHomeProject.Endpoint) async throws {
     }
 }
+#endif

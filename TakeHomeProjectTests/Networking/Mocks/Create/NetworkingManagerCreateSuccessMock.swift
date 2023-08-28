@@ -5,8 +5,8 @@
 //  Created by Eric on 25/08/2023.
 //
 
+#if DEBUG
 import Foundation
-@testable import TakeHomeProject
 
 class NetworkingManagerCreateSuccessMock: NetworkingManagerImpl {
     
@@ -16,3 +16,4 @@ class NetworkingManagerCreateSuccessMock: NetworkingManagerImpl {
     
     func request(session: URLSession, _ endpoint: TakeHomeProject.Endpoint) async throws {}
 }
+#endif
