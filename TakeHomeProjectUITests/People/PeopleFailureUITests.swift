@@ -15,7 +15,7 @@ final class PeopleFailureUITests: XCTestCase {
         continueAfterFailure = false
         app = XCUIApplication()
         app.launchArguments = ["-ui-testing"]
-        app.launchEnvironment = ["-networking-success":"0"]
+        app.launchEnvironment = ["-people-networking-success":"0"]
         app.launch()
     }
     

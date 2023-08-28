@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct DetailView: View {
+    
     let userId: Int
-    @StateObject private var vm = DetailViewModel()
+    @StateObject private var vm: DetailViewModel
+    
+    init(userId: Int) {
+        self.userId = userId
+    #if DEBUG
+        if UITestingHelper.isUITesting {
+            let mock: NetworkingManagerImpl = UITestingHelper.isDetailsNetworkingSuccessful ? NetworkingManagerUserDetailsResponseSuccessMock() : NetworkingManagerUserDetailsResponseFailureMock()
+            
+            _vm = StateObject(wrappedValue: DetailViewModel(networkingManager: mock))
+        } else {
+            _vm = StateObject(wrappedValue: DetailViewModel())
+        }
+    #else
+        _vm = StateObject(wrappedValue: DetailViewModel())
+    #endif
+    }
+    
     
     var body: some View {
         ZStack {
