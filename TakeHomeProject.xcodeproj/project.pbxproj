@@ -58,6 +58,8 @@
 		0755699B2A9B7A4F00617D64 /* NetworkingManagerUserDetailsResponseSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569612A98CC4C00617D64 /* NetworkingManagerUserDetailsResponseSuccessMock.swift */; };
 		0755699C2A9B7AA200617D64 /* MockURLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755694D2A939E1400617D64 /* MockURLSessionProtocol.swift */; };
 		07EBF4312A9CC64A003EE70F /* PeopleFailureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBF4302A9CC64A003EE70F /* PeopleFailureUITests.swift */; };
+		07EBF4342A9CC899003EE70F /* DetailsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBF4332A9CC899003EE70F /* DetailsUITests.swift */; };
+		07EBF4362A9CCD3B003EE70F /* DetailsFailureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBF4352A9CCD3B003EE70F /* DetailsFailureUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,8 @@
 		0755698C2A9A2D2400617D64 /* PeopleScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleScreenUITests.swift; sourceTree = "<group>"; };
 		0755698F2A9A2EB100617D64 /* UITestingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingHelper.swift; sourceTree = "<group>"; };
 		07EBF4302A9CC64A003EE70F /* PeopleFailureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleFailureUITests.swift; sourceTree = "<group>"; };
+		07EBF4332A9CC899003EE70F /* DetailsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsUITests.swift; sourceTree = "<group>"; };
+		07EBF4352A9CCD3B003EE70F /* DetailsFailureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFailureUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -539,6 +543,7 @@
 		075569812A9A2C8F00617D64 /* TakeHomeProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
+				07EBF4322A9CC884003EE70F /* Details */,
 				0755698B2A9A2D0600617D64 /* People */,
 			);
 			path = TakeHomeProjectUITests;
@@ -580,6 +585,15 @@
 				075569742A98DB5600617D64 /* CreateValidatorFailureMock.swift */,
 			);
 			path = Create;
+			sourceTree = "<group>";
+		};
+		07EBF4322A9CC884003EE70F /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				07EBF4332A9CC899003EE70F /* DetailsUITests.swift */,
+				07EBF4352A9CCD3B003EE70F /* DetailsFailureUITests.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -775,6 +789,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0755698D2A9A2D2400617D64 /* PeopleScreenUITests.swift in Sources */,
+				07EBF4362A9CCD3B003EE70F /* DetailsFailureUITests.swift in Sources */,
+				07EBF4342A9CC899003EE70F /* DetailsUITests.swift in Sources */,
 				07EBF4312A9CC64A003EE70F /* PeopleFailureUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

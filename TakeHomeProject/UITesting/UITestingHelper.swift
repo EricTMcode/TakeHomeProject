@@ -15,8 +15,12 @@ struct UITestingHelper {
         ProcessInfo.processInfo.arguments.contains("-ui-testing")
     }
     
-    static var isNetworkingSuccessful: Bool {
-        ProcessInfo.processInfo.environment["-networking-success"] == "1"
+    static var isPeopleNetworkingSuccessful: Bool {
+        ProcessInfo.processInfo.environment["-people-networking-success"] == "1"
+    }
+    
+    static var isDetailsNetworkingSuccessful: Bool {
+        ProcessInfo.processInfo.environment["-details-networking-success"] == "1"
     }
 }
 
