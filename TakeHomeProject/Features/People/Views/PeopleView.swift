@@ -137,6 +137,7 @@ private extension PeopleView {
                 .bold()
         }
         .disabled(vm.isLoading)
+        .accessibilityIdentifier("createBtn")
     }
     
     var refresh: some View {

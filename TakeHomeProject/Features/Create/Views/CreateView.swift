@@ -8,10 +8,27 @@
 import SwiftUI
 
 struct CreateView: View {
-    @StateObject private var vm = CreateViewModel()
+    
+    @StateObject private var vm: CreateViewModel
     @FocusState private var focusedField: Field?
     @Environment(\.dismiss) private var dismiss
-    let successfulAction: () -> Void
+    
+    private let successfulAction: () -> Void
+    
+    internal init(successfulAction: @escaping () -> Void) {
+        self.successfulAction = successfulAction
+        
+        #if DEBUG
+        if UITestingHelper.isUITesting {
+            let mock: NetworkingManagerImpl = UITestingHelper.isCreateNetworkingSuccessful ? NetworkingManagerCreateSuccessMock() : NetworkingManagerCreateFailureMock()
+            _vm = StateObject(wrappedValue: CreateViewModel(networkingManager: mock))
+        } else {
+            _vm = StateObject(wrappedValue: CreateViewModel())
+        }
+        #else
+        _vm = StateObject(wrappedValue: CreateViewModel())
+        #endif
+    }
     
     var body: some View {
         NavigationStack {
@@ -75,21 +92,25 @@ private extension CreateView {
         Button("Done") {
             dismiss()
         }
+        .accessibilityIdentifier("doneBtn")
     }
     
     var firstname: some View {
         TextField("First name", text: $vm.person.firstName)
             .focused($focusedField, equals: .firstName)
+            .accessibilityIdentifier("firstNameTxtfield")
     }
     
     var lastname: some View {
         TextField("Last name", text: $vm.person.lastName)
             .focused($focusedField, equals: .lastName)
+            .accessibilityIdentifier("lastNameTxtfield")
     }
     
     var job: some View {
         TextField("Job", text: $vm.person.job)
             .focused($focusedField, equals: .job)
+            .accessibilityIdentifier("jobTxtField")
     }
     
     var submit: some View {
@@ -99,5 +120,6 @@ private extension CreateView {
                 await vm.create()
             }
         }
+        .accessibilityIdentifier("submitBtn")
     }
 }

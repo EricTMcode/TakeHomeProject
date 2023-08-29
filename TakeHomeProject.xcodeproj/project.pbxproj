@@ -57,9 +57,13 @@
 		0755699A2A9B7A4500617D64 /* NetworkingManagerUserDetailsResponseFailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569632A98CCF000617D64 /* NetworkingManagerUserDetailsResponseFailureMock.swift */; };
 		0755699B2A9B7A4F00617D64 /* NetworkingManagerUserDetailsResponseSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075569612A98CC4C00617D64 /* NetworkingManagerUserDetailsResponseSuccessMock.swift */; };
 		0755699C2A9B7AA200617D64 /* MockURLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755694D2A939E1400617D64 /* MockURLSessionProtocol.swift */; };
+		07CA5D3E2A9E101000A5C487 /* CreateFailureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CA5D3D2A9E101000A5C487 /* CreateFailureUITests.swift */; };
+		07CA5D402A9E133F00A5C487 /* CreateScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CA5D3F2A9E133F00A5C487 /* CreateScreenUITests.swift */; };
 		07EBF4312A9CC64A003EE70F /* PeopleFailureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBF4302A9CC64A003EE70F /* PeopleFailureUITests.swift */; };
 		07EBF4342A9CC899003EE70F /* DetailsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBF4332A9CC899003EE70F /* DetailsUITests.swift */; };
 		07EBF4362A9CCD3B003EE70F /* DetailsFailureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBF4352A9CCD3B003EE70F /* DetailsFailureUITests.swift */; };
+		07EBF4392A9CD1BA003EE70F /* CreateScreenUIValidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBF4382A9CD1BA003EE70F /* CreateScreenUIValidTests.swift */; };
+		07EBF43B2A9CD52B003EE70F /* CreateScreenFormValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBF43A2A9CD52B003EE70F /* CreateScreenFormValidationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,9 +138,13 @@
 		075569802A9A2C8F00617D64 /* TakeHomeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0755698C2A9A2D2400617D64 /* PeopleScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleScreenUITests.swift; sourceTree = "<group>"; };
 		0755698F2A9A2EB100617D64 /* UITestingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingHelper.swift; sourceTree = "<group>"; };
+		07CA5D3D2A9E101000A5C487 /* CreateFailureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFailureUITests.swift; sourceTree = "<group>"; };
+		07CA5D3F2A9E133F00A5C487 /* CreateScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScreenUITests.swift; sourceTree = "<group>"; };
 		07EBF4302A9CC64A003EE70F /* PeopleFailureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleFailureUITests.swift; sourceTree = "<group>"; };
 		07EBF4332A9CC899003EE70F /* DetailsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsUITests.swift; sourceTree = "<group>"; };
 		07EBF4352A9CCD3B003EE70F /* DetailsFailureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFailureUITests.swift; sourceTree = "<group>"; };
+		07EBF4382A9CD1BA003EE70F /* CreateScreenUIValidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScreenUIValidTests.swift; sourceTree = "<group>"; };
+		07EBF43A2A9CD52B003EE70F /* CreateScreenFormValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScreenFormValidationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -543,6 +551,7 @@
 		075569812A9A2C8F00617D64 /* TakeHomeProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
+				07EBF4372A9CD199003EE70F /* Create */,
 				07EBF4322A9CC884003EE70F /* Details */,
 				0755698B2A9A2D0600617D64 /* People */,
 			);
@@ -594,6 +603,17 @@
 				07EBF4352A9CCD3B003EE70F /* DetailsFailureUITests.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		07EBF4372A9CD199003EE70F /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				07EBF4382A9CD1BA003EE70F /* CreateScreenUIValidTests.swift */,
+				07EBF43A2A9CD52B003EE70F /* CreateScreenFormValidationTests.swift */,
+				07CA5D3D2A9E101000A5C487 /* CreateFailureUITests.swift */,
+				07CA5D3F2A9E133F00A5C487 /* CreateScreenUITests.swift */,
+			);
+			path = Create;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -788,9 +808,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07EBF4392A9CD1BA003EE70F /* CreateScreenUIValidTests.swift in Sources */,
+				07CA5D402A9E133F00A5C487 /* CreateScreenUITests.swift in Sources */,
 				0755698D2A9A2D2400617D64 /* PeopleScreenUITests.swift in Sources */,
+				07EBF43B2A9CD52B003EE70F /* CreateScreenFormValidationTests.swift in Sources */,
 				07EBF4362A9CCD3B003EE70F /* DetailsFailureUITests.swift in Sources */,
 				07EBF4342A9CC899003EE70F /* DetailsUITests.swift in Sources */,
+				07CA5D3E2A9E101000A5C487 /* CreateFailureUITests.swift in Sources */,
 				07EBF4312A9CC64A003EE70F /* PeopleFailureUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
