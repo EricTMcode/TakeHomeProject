@@ -14,7 +14,7 @@ struct DetailView: View {
     
     init(userId: Int) {
         self.userId = userId
-    #if DEBUG
+#if DEBUG
         if UITestingHelper.isUITesting {
             let mock: NetworkingManagerImpl = UITestingHelper.isDetailsNetworkingSuccessful ? NetworkingManagerUserDetailsResponseSuccessMock() : NetworkingManagerUserDetailsResponseFailureMock()
             
@@ -22,9 +22,9 @@ struct DetailView: View {
         } else {
             _vm = StateObject(wrappedValue: DetailViewModel())
         }
-    #else
+#else
         _vm = StateObject(wrappedValue: DetailViewModel())
-    #endif
+#endif
     }
     
     
@@ -62,9 +62,8 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationStack {
-            DetailView(userId: User.example.id)
-        }
+        DetailView(userId: User.example.id)
+            .embedInNavigation()
     }
 }
 

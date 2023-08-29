@@ -31,7 +31,6 @@ struct CreateView: View {
     }
     
     var body: some View {
-        NavigationStack {
             Form {
                 Section {
                     firstname
@@ -68,7 +67,7 @@ struct CreateView: View {
                     ProgressView()
                 }
             }
-        }
+            .embedInNavigation()
     }
 }
 
