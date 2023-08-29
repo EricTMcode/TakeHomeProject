@@ -28,89 +28,91 @@ struct PeopleView: View {
         }
         
         #else
-            _vm = StateObject(wrappedValue: PeopleViewModel())
+        _vm = StateObject(wrappedValue: PeopleViewModel())
         #endif
         
     }
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                background
-                
-                if vm.isLoading {
-                    ProgressView()
-                } else {
-                    ScrollView {
-                        LazyVGrid(columns: columns, spacing: 16) {
-                            ForEach(vm.users, id: \.id) { user in
-                                NavigationLink {
-                                    DetailView(userId: user.id)
-                                } label: {
-                                    PersonItemView(user: user)
-                                        .accessibilityIdentifier("item_\(user.id)")
-                                        .task {
-                                            if vm.hasReachEnd(of: user) && !vm.isFetching {
-                                                await vm.fetchNextSetOfUsers()
-                                            }
+        ZStack {
+            background
+            
+            if vm.isLoading {
+                ProgressView()
+            } else {
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 16) {
+                        ForEach(vm.users, id: \.id) { user in
+                            NavigationLink {
+                                DetailView(userId: user.id)
+                            } label: {
+                                PersonItemView(user: user)
+                                    .accessibilityIdentifier("item_\(user.id)")
+                                    .task {
+                                        if vm.hasReachEnd(of: user) && !vm.isFetching {
+                                            await vm.fetchNextSetOfUsers()
                                         }
-                                }
+                                    }
                             }
                         }
-                        .padding()
-                        .accessibilityIdentifier("peopleGrid")
                     }
-                    .overlay(alignment: .bottom) {
-                        if vm.isFetching {
-                            ProgressView()
-                        }
-                    }
+                    .padding()
+                    .accessibilityIdentifier("peopleGrid")
                 }
-            }
-            .navigationTitle("People")
-            .toolbar {
-                ToolbarItem(placement: .primaryAction) {
-                    create
-                }
-                ToolbarItem(placement: .navigationBarLeading) {
-                    refresh
-                }
-            }
-            .task {
-                if !hasAppeared {
+                .refreshable {
                     await vm.fetchUsers()
-                    hasAppeared = true
                 }
-            }
-            .sheet(isPresented: $shouldShowCreate) {
-                CreateView {
-                    haptic(.success)
-                    withAnimation(.spring().delay(0.25)) {
-                        self.shouldShowSuccess.toggle()
+                .overlay(alignment: .bottom) {
+                    if vm.isFetching {
+                        ProgressView()
                     }
-                }
-            }
-            .alert(isPresented: $vm.hasError, error: vm.error) {
-                Button("Retry") {
-                    Task {
-                        await vm.fetchUsers()
-                    }
-                }
-            }
-            .overlay {
-                if shouldShowSuccess {
-                    CheckmarkPopoverView()
-                        .transition(.scale.combined(with: .opacity))
-                        .onAppear {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                                withAnimation(.spring()) {
-                                    self.shouldShowSuccess.toggle()
-                                }
-                            }
-                        }
                 }
             }
         }
+        .navigationTitle("People")
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                create
+            }
+            ToolbarItem(placement: .navigationBarLeading) {
+                refresh
+            }
+        }
+        .task {
+            if !hasAppeared {
+                await vm.fetchUsers()
+                hasAppeared = true
+            }
+        }
+        .sheet(isPresented: $shouldShowCreate) {
+            CreateView {
+                haptic(.success)
+                withAnimation(.spring().delay(0.25)) {
+                    self.shouldShowSuccess.toggle()
+                }
+            }
+        }
+        .alert(isPresented: $vm.hasError, error: vm.error) {
+            Button("Retry") {
+                Task {
+                    await vm.fetchUsers()
+                }
+            }
+        }
+        .overlay {
+            if shouldShowSuccess {
+                CheckmarkPopoverView()
+                    .transition(.scale.combined(with: .opacity))
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                            withAnimation(.spring()) {
+                                self.shouldShowSuccess.toggle()
+                            }
+                        }
+                    }
+            }
+        }
+        .embedInNavigation()
     }
 }
 
